@@ -1,7 +1,5 @@
 const errorExplanations = [
-	// Specific JavaScript TypeErrors
-	// Keep specific errors before general errors.
-
+// An index of errors will add more in the future, I just want to get the extension polished first.
 
 	{
 		regex: /Cannot read properties of undefined (?: \(reading ['"`].+?['"`]\))?/i,
@@ -121,9 +119,7 @@ const errorExplanations = [
 		]
 	},
 
-	// ==================================================
 	// Reference and declaration errors
-	// ==================================================
 
 	{
 		regex: /is not defined(?: \(reading ['"`].+?['"`]\))?/i,
@@ -164,9 +160,7 @@ const errorExplanations = [
 		]
 	},
 
-	// ==================================================
 	// Syntax errors
-	// ==================================================
 
 	{
 		regex: /Unexpected end of input(?: \(reading ['"`].+?['"`]\))?/i,
@@ -273,9 +267,7 @@ const errorExplanations = [
 		]
 	},
 
-	// ==================================================
 	// Node.js and module errors
-	// ==================================================
 
 	{
 		regex: /Cannot find module(?: \(reading ['"`].+?['"`]\))?/i,
@@ -369,9 +361,7 @@ const errorExplanations = [
 		]
 	},
 
-	// ==================================================
 	// Recursion, JSON, and promise errors
-	// ==================================================
 
 	{
 		regex: /Maximum call stack size exceeded(?: \(reading ['"`].+?['"`]\))?/i,
@@ -426,10 +416,8 @@ const errorExplanations = [
 		]
 	},
 
-	// ==================================================
 	// General fallback errors
-	// These should remain near the bottom.
-	// ==================================================
+	// Keep these at the bottom
 
 	{
 		regex: /ReferenceError(?: \(reading ['"`].+?['"`]\))?/i,
